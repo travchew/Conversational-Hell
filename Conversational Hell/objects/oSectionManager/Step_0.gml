@@ -8,7 +8,7 @@ switch (global.section) {
 	break;	
 	
 	case "unenthusiastic_yeah":
-		check_cutsc_enthusiastic_yeah();
+		check_cutsc_unenthusiastic_yeah();
 	break;	
 	case "jag_intro":
 		check_cutsc_jag_intro();
@@ -46,6 +46,11 @@ switch (global.section) {
 	case "d3bad":
 		check_cutsc_d3bad();
 	break;
+	
+	case "enki_final":
+		check_cutsc_enki_final();
+	break;
+	
 	
 	
 	

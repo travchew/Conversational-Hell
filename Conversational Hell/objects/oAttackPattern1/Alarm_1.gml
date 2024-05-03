@@ -2,7 +2,7 @@
 
 image_angle -= 15;
 
-newBullet = instance_create_layer(x,y,"Bullets",oAttackBallSmall);
+newBullet = instance_create_layer(x,y,"Bullets",oAttackBallStraight);
 newBullet.direction = image_angle;
 newBullet.speed = 3;
 

@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"track1",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":256.15674,
+  "name":"track1",
+  "parent":{
+    "name":"sound:music",
+    "path":"folders/sound:music.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"track1.mp3",
+  "type":0,
+  "volume":0.1,
+}

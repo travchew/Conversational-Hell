@@ -10,3 +10,12 @@ mouth_state = 1; // 0 - 3
 head_state = 0;
 headphones_state = 0;
 hoodie_state = 0;
+
+function shakeby(_mag) {
+	magx = _mag*3;
+	magy = _mag*3;
+}
+
+decx = 0.3;
+decy = 0.3;
+

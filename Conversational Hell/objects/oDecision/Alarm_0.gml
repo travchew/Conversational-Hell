@@ -44,6 +44,11 @@ if (choice_set = decisions3) {
 	}
 }
 
+if (choice_set = decisions4) {
+	room_goto(ending);
+
+}
+
 
 instance_destroy();
 

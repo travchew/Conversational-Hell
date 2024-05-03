@@ -37,7 +37,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"enemy_deer",
+    "path":"sprites/enemy_deer/enemy_deer.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

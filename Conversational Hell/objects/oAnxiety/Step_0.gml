@@ -1,0 +1,1 @@
+global.anxiety = clamp(global.anxiety, 0, 10);

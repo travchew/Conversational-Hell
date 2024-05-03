@@ -41,7 +41,7 @@
   "origin":4,
   "parent":{
     "name":"attack_animations",
-    "path":"folders/Bullet Hell/_attacks/attack_animations.yy",
+    "path":"folders/Bullet Hell/_attacks/attack/attack_animations.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

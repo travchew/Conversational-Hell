@@ -51,7 +51,7 @@ function check_cutsc() { // Unused now.
 function dialogue_protagonist(_args) {
 	// [snd, shakeby, body, face, pose]
 	dialogue_playing = audio_play_sound(_args[0], 10, false);
-	//oEthan.shakeby(_args[1]);
+	oProtagonist.shakeby(_args[1]);
 	oProtagonist.head_state = _args[2];
 	oProtagonist.eyes_state = _args[3];
 	oProtagonist.mouth_state = _args[4];
@@ -59,6 +59,7 @@ function dialogue_protagonist(_args) {
 
 function dialogue_date(_args) {
 	dialogue_playing = audio_play_sound(_args[0], 10, false);
+	oDate.shakeby(_args[1]);
 	oDate.bigeye_state = _args[2];
 	oDate.face_state = _args[3];
 }

@@ -13,6 +13,9 @@ decisions3[0] = "Yeah, fuck people!";
 decisions3[1] = "Aren't some people are worth a chance!";
 decisions3[2] = "I actually like people...";
 
+decisions4[0] = "Thats cool with me.";
+decisions4[1] = "I want to see you again";
+
 
 
 
@@ -34,6 +37,10 @@ function set_decision_tree() {
 		case "D3":
 			choice_set = decisions3;
 	    break;
+		case "D4":
+			choice_set = decisions4;
+	    break;
+		
 	    default:
 	
 	    break;
