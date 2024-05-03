@@ -1,15 +1,17 @@
 {
   "$GMObject":"",
-  "%Name":"oCursor_1",
+  "%Name":"oDateScore",
   "eventList":[
+    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"oCursor_1",
+  "name":"oDateScore",
   "overriddenProperties":[],
   "parent":{
-    "name":"UI",
-    "path":"folders/UI.yy",
+    "name":"Char:Protagonist",
+    "path":"folders/Char:Protagonist.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -29,10 +31,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"sCursor_1",
-    "path":"sprites/sCursor_1/sCursor_1.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

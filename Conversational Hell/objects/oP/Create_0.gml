@@ -121,6 +121,7 @@ function check_dmg() {
 		alarm[1] = 12;
 		hp -= 1;
 		global.anxiety += 0.3;
+		oProtagonist.shakeby(6);
 		global.limit += 9;
 		audio_play_sound(snd_hurt, 10, false, 10, 0.16);
 		//audio_play_sound(snd_hurt_hi, 10, false, .1, 0.61, 1.1);

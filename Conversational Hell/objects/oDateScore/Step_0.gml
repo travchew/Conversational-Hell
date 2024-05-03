@@ -1,0 +1,1 @@
+global.datescore = clamp(global.datescore, 0, 10);

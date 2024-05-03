@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":1.253878,
+  "duration":18.12898,
   "name":"enki_lore11",
   "parent":{
     "name":"enki_lore",

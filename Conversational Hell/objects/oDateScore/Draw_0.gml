@@ -1,0 +1,1 @@
+draw_text_ext_transformed(x,y,"DateScore: " + string(global.datescore), 1000, 1000, 3, 3, image_angle);
