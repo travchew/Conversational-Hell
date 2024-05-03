@@ -1,0 +1,1 @@
+my_flash = instance_create_layer(x,y,"Above", oBulletFlash);

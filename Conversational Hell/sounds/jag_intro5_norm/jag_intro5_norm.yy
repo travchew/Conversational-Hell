@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"jag_intro5_norm",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":8.496,
+  "name":"jag_intro5_norm",
+  "parent":{
+    "name":"jag_intro",
+    "path":"folders/sound:dialogue/jag_intro.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"jag_intro5_norm.mp3",
+  "type":0,
+  "volume":1.0,
+}

@@ -1,0 +1,2 @@
+controls_arrows();
+move();

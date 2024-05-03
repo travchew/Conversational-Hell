@@ -1,0 +1,1 @@
+global.anxiety = 5;

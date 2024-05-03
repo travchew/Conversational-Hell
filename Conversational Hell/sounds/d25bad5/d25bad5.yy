@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"d25bad5",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":2.28,
+  "name":"d25bad5",
+  "parent":{
+    "name":"D25",
+    "path":"folders/sound:dialogue/D25.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"d25bad5.mp3",
+  "type":0,
+  "volume":1.0,
+}

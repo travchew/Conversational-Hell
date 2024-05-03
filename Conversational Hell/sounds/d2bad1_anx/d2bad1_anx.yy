@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"d2bad1_anx",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":2.472,
+  "name":"d2bad1_anx",
+  "parent":{
+    "name":"D2",
+    "path":"folders/sound:dialogue/D2.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"d2bad1_anx.mp3",
+  "type":0,
+  "volume":1.0,
+}

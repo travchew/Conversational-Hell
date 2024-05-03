@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"snd_eLine1",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":17.28,
+  "name":"snd_eLine1",
+  "parent":{
+    "name":"misc",
+    "path":"folders/sound:dialogue/misc.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"snd_eLine1.mp3",
+  "type":0,
+  "volume":1.0,
+}

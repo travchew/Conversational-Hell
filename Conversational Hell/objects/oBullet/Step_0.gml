@@ -1,0 +1,2 @@
+speed = move_spd;
+
