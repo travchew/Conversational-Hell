@@ -2,7 +2,7 @@
   "$GMSprite":"",
   "%Name":"knife_small",
   "bboxMode":2,
-  "bbox_bottom":5,
+  "bbox_bottom":4,
   "bbox_left":2,
   "bbox_right":6,
   "bbox_top":3,

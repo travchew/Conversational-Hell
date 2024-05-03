@@ -15,8 +15,10 @@ function check_cutsc_ex() {
 
 function check_cutsc_date_start() {
 	with(oCutscManager) {
+		
 		cutsc("play track1", 3, true, playtrack, [track1]);
 		cutsc("date_start1", 2.5*SEC, true, dialogue_date, [date_start1, 3, 0, 0]);
+		
 		cutsc("date_start2", 14.1*SEC, true, dialogue_date, [date_start2, 3, 2, 0]);
 		cutsc("date_start3", 3*SEC, true, dialogue_protagonist, [date_start3, 3, 2, 4, 2, 0]);
 		cutsc("date_start4", 7*SEC, true, dialogue_date, [date_start4, 3, 5, 3]);
@@ -59,12 +61,13 @@ function check_cutsc_unenthusiastic_yeah() {
 
 function check_cutsc_jag_intro() {
 	with(oCutscManager) {
+		cutsc("play track jagintro", 3, true, playtrack, [track_jag_intro]);
 		cutsc("jag_intro1", 2*SEC, true, dialogue_date, [jag_intro1, 3, 3, 3]);
-		cutsc("jag_intro2", 5.5*SEC, true, dialogue_date, [jag_intro2, 3, 0, 2]);
+		cutsc("jag_intro2", 5.9*SEC, true, dialogue_date, [jag_intro2, 3, 0, 2]);
 		cutsc("test attack DEER", 3, true, prompt_attack, [960,540,oAttackPatternDeerSpamEasy,10]);
 		cutsc("jag_intro3", 2.5*SEC, true, dialogue_protagonist, [jag_intro3, 6, 3, 3, 0, 0]);
 		cutsc("jag_intro4", 3, true, dialogue_protagonist, [blank, 0, 3, 3, 0, 0]);
-		cutsc("jag_intro5_anx", 8*SEC, true, dialogue_protagonist, [jag_intro5_anx, 6, 2, 5, 0, 2]);
+		cutsc("jag_intro5_anx", 8.2*SEC, true, dialogue_protagonist, [jag_intro5_anx, 6, 2, 5, 0, 2]);
 		//cutsc("jag_intro5_anx", 8*SEC, (global.anxiety > 2), dialogue_protagonist, [jag_intro5_anx, 6, 2, 5, 0, 2]);
 		//cutsc("jag_intro5_norm", 8*SEC, (global.anxiety < 1), dialogue_protagonist, [jag_intro5_norm, 10, 2, 5, 0, 2]);
 		cutsc("test end easy spam", 3, true, prompt_endattack, []);
@@ -72,7 +75,7 @@ function check_cutsc_jag_intro() {
 		cutsc("test attack hardspam2", 3, true, prompt_attack, [960+300,540,oAttackPatternDeerSpamHard,10]);
 		//cutsc("test attack hardspam3", 3, true, prompt_attack, [960,540+350,oAttackPatternDeerSpamHard,10]);
 		cutsc("jag_intro6", 6.6*SEC, true, dialogue_date, [jag_intro6, 3, 5, 3]);
-		cutsc("jag_intro7", 12.6*SEC, true, dialogue_date, [jag_intro7, 3, 0, 2]);
+		cutsc("jag_intro7", 12.7*SEC, true, dialogue_date, [jag_intro7, 3, 0, 2]);
 		cutsc("test end hardspam", 3, true, prompt_endattack, []);
 		cutsc("jag_intro8", 3.9*SEC, true, dialogue_protagonist, [jag_intro8, 3, 2, 3, 0, 2]);
 		//cutsc("jag_intro9", 10*SEC, true, dialogue_date, [blank, 3, 2, 3, 0, 2]);
@@ -136,6 +139,7 @@ function check_cutsc_d2bad() {
 
 function check_cutsc_enki_lore() {
 	with(oCutscManager) {
+		cutsc("play track enkilore", 3, true, playtrack, [track_enki_lorenew]);
 		cutsc("enki_lore1", 2.5*SEC, true, dialogue_date, [enki_lore1, 3, 0, 2]);
 		cutsc("enki_lore2", 5.7*SEC, true, dialogue_date, [enki_lore2, 3, 0, 3]);
 		cutsc("cosknives", 3, true, prompt_attack, [960,320-200,oAttackPatternCosKnives,10]);
@@ -144,7 +148,7 @@ function check_cutsc_enki_lore() {
 		cutsc("enki_lore5", 3*SEC, (global.anxiety > 4), dialogue_protagonist, [enki_lore5_anx, 6, 0, 5, 0, 1]);
 		cutsc("enki_lore5", 3*SEC, (global.anxiety < 4), dialogue_protagonist, [enki_lore5_norm, 6, 0, 5, 2, 1]);
 		cutsc("enki_lore6", 2*SEC, true, dialogue_date, [enki_lore6, 3, 5, 6]);
-		cutsc("enki_lore7", 4*SEC, true, dialogue_date, [enki_lore7, 3, 5, 3]);
+		cutsc("enki_lore7", 4.5*SEC, true, dialogue_date, [enki_lore7, 3, 5, 3]);
 		cutsc("cosknives", 3, true, prompt_attack, [960,320-200,oAttackPatternCosKnives,10]);
 		cutsc("enki_lore8", 8*SEC, true, dialogue_date, [enki_lore8, 3, 5, 0]);
 		cutsc("enki_lore9", 8*SEC, (global.anxiety > 4), dialogue_protagonist, [enki_lore9_anx, 6, 0, 5, 0, 1]);
@@ -153,18 +157,18 @@ function check_cutsc_enki_lore() {
 		// NEW ATTACK HERE PLS?
 		cutsc("butcher1", 3, true, prompt_attack, [960-400,320,oAttackPatternButcher,10]);
 		cutsc("enki_lore10", 8*SEC, true, dialogue_date, [enki_lore10, 3, 2, 0]);
-		cutsc("enki_lore11", 18*SEC, true, dialogue_date, [enki_lore11, 3, 2, 1]);
+		cutsc("enki_lore11", 18*SEC, true, dialogue_date, [enki_lore11, 3, 2, 0]);
 		cutsc("butcher1", 3, true, prompt_attack, [960+400,320,oAttackPatternButcher,10]);
 		cutsc("enki_lore12", 4*SEC, (global.anxiety > 5), dialogue_protagonist, [enki_lore12_anx, 6, 3, 5, 2, 2]);
 		cutsc("enki_lore12", 4*SEC, (global.anxiety < 5), dialogue_protagonist, [enki_lore12_norm, 6, 3, 5, 0, 2]);
-		cutsc("enki_lore13", 4.5*SEC, true, dialogue_date, [enki_lore13, 3, 2, 2]);
-		cutsc("enki_lore14", 7*SEC, true, dialogue_date, [enki_lore14, 3, 2, 1]);
+		cutsc("enki_lore13", 4.9*SEC, true, dialogue_date, [enki_lore13, 3, 2, 2]);
+		cutsc("enki_lore14", 7*SEC, true, dialogue_date, [enki_lore14, 3, 2, 2]);
 		cutsc("enki_lore15", 12*SEC, true, dialogue_date, [enki_lore15, 3, 2, 0]);
 		cutsc("enki_lore16", 11*SEC, true, dialogue_date, [enki_lore16, 3, 2, 0]);
 		cutsc("end butcher", 3, true, prompt_endattack, []);
-		cutsc("enki_lore17", 4*SEC, (global.anxiety > 5), dialogue_protagonist, [enki_lore17_anx, 6, 0, 5, 2, 0]);
+		cutsc("enki_lore17", 5*SEC, (global.anxiety > 5), dialogue_protagonist, [enki_lore17_anx, 6, 0, 5, 2, 0]);
 		cutsc("enki_lore17", 5*SEC, (global.anxiety < 5), dialogue_protagonist, [enki_lore17_norm, 6, 0, 5, 0, 0]);
-		cutsc("enki_lore18", 4.5*SEC, true, dialogue_date, [enki_lore18, 3, 3, 5]);
+		cutsc("enki_lore18", 4.5*SEC, true, dialogue_date, [enki_lore18, 3, 3, 6]);
 		cutsc("prompt D25", 3, true, prompt_decision, ["D25"]);
 	}
 }
@@ -172,7 +176,7 @@ function check_cutsc_enki_lore() {
 function check_cutsc_d25good() {
 	with(oCutscManager) {
 		cutsc("d25good1", 5*SEC, true, dialogue_protagonist, [d25good1, 3, 3, 5, 3, 2]);
-		cutsc("d25good2", 4*SEC, true, dialogue_date, [d25good2, 3, 5, 3]);
+		cutsc("d25good2", 6*SEC, true, dialogue_date, [d25good2, 3, 5, 3]);
 		cutsc("go to enki SNAPS", 3, true, prompt_goto_section, ["enki_snaps"]);
 	}
 }
@@ -196,18 +200,19 @@ function check_cutsc_d25bad() {
 
 function check_cutsc_enki_snaps() {
 	with(oCutscManager) {
+		cutsc("play enki snaps", 3, true, playtrack, [track_enki_snaps]);
 		cutsc("cosknives ", 3, true, prompt_attack, [960,320-200,oAttackPatternCosKnives,10]);
 		cutsc("enki_snaps1", 6*SEC, true, dialogue_date, [enki_snaps1, 3, 1, 2]);
 		cutsc("enki_snaps2", 4.5*SEC, true, dialogue_date, [enki_snaps2, 3, 2, 0]);
 		cutsc("end first cosknives", 3, true, prompt_endattack, []);
 		cutsc("enki_snaps3", 4*SEC, true, dialogue_protagonist, [enki_snaps3, 3, 2, 5, 0, 0]);
 		cutsc("spiral", 3, true, prompt_attack, [960,540,oAttackPatternRapid,10]);
-		cutsc("enki_snaps4", 12*SEC, true, dialogue_date, [enki_snaps4_dis, 3, 2, 1]);
+		cutsc("enki_snaps4", 12.5*SEC, true, dialogue_date, [enki_snaps4_dis, 3, 2, 1]);
 		
 		cutsc("enki_snaps5", 3.5*SEC, true, dialogue_date, [enki_snaps5_dis, 3, 6, 5]);
 		cutsc("end first rapidfire", 3, true, prompt_endattack, []);
 		cutsc("enki_snaps6", 2*SEC, true, dialogue_protagonist, [enki_snaps6, 10, 0, 4, 2, 1]);
-		cutsc("rapid fire duo1", 3, true, prompt_attack, [960+300,540 + 230,oAttackPatternRapid,10]);
+		cutsc("rapid fire duo1", 3, true, prompt_attack, [960+400,540 + 330,oAttackPatternRapid,10]);
 		cutsc("enki_snaps7", 7.3*SEC, true, dialogue_date, [enki_snaps7_dis, 3, 3, 1]);
 		cutsc("rapid fire duo2", 3, true, prompt_attack, [960-300,540 - 150,oAttackPattern1,10]);
 		cutsc("enki_snaps10", 5.5*SEC, true, dialogue_date, [enki_snaps10_dis, 3, 4, 1]);
@@ -261,30 +266,31 @@ function check_cutsc_d3bad() {
 
 function check_cutsc_enki_final() {
 	with(oCutscManager) {
-		cutsc("enki_final1", 3.5*SEC, (global.anxiety < 6), dialogue_protagonist, [enki_final1_norm, 6, 2, 5, 2, 0]);
-		cutsc("enki_final1", 3*SEC, (global.anxiety > 6), dialogue_protagonist, [enki_final1_anx, 10, 2, 5, 2, 0]);
+		cutsc("play track lore", 3, true, playtrack, [track_lore]);
+		cutsc("enki_final1", 3.9*SEC, (global.anxiety < 6), dialogue_protagonist, [enki_final1_norm, 6, 2, 5, 2, 0]);
+		cutsc("enki_final1", 3.9*SEC, (global.anxiety > 6), dialogue_protagonist, [enki_final1_anx, 10, 2, 5, 2, 0]);
 		cutsc("test attack DEER again", 3, true, prompt_attack, [960,540,oAttackPatternDeerSpamEasy,10]);
 		cutsc("test attack DEER2 AGAIN", 3, true, prompt_attack, [960,540,oAttackPatternDeerSpamEasy,10]);
-		cutsc("enki_final2", 3.5*SEC, (global.anxiety < 6), dialogue_protagonist, [enki_final2_norm, 6, 2, 5, 2, 0]);
-		cutsc("enki_final2", 3.5*SEC, (global.anxiety > 6), dialogue_protagonist, [enki_final2_anx, 10, 2, 5, 2, 0]);
+		cutsc("enki_final2", 3.6*SEC, (global.anxiety < 6), dialogue_protagonist, [enki_final2_norm, 6, 2, 5, 2, 0]);
+		cutsc("enki_final2", 3.6*SEC, (global.anxiety > 6), dialogue_protagonist, [enki_final2_anx, 10, 2, 5, 2, 0]);
 		cutsc("end deer finale", 3, true, prompt_endattack, []);
 		cutsc("test attack DEER3", 3, true, prompt_attack, [960 + 300,540,oAttackPatternDeerSpamEasy,10]);
 		cutsc("test attack DEER4", 3, true, prompt_attack, [960 - 300,540,oAttackPatternDeerSpamEasy,10]);
-		cutsc("enki_final3", 2*SEC, (global.anxiety < 6), dialogue_protagonist, [enki_final3_norm, 6, 2, 5, 2, 1]);
-		cutsc("enki_final3", 1.5*SEC, (global.anxiety > 6), dialogue_protagonist, [enki_final3_anx, 10, 2, 5, 2, 1]);
+		cutsc("enki_final3", 2.3*SEC, (global.anxiety < 6), dialogue_protagonist, [enki_final3_norm, 6, 2, 5, 2, 1]);
+		cutsc("enki_final3", 2.3*SEC, (global.anxiety > 6), dialogue_protagonist, [enki_final3_anx, 10, 2, 5, 2, 1]);
 		cutsc("end deer finale", 3, true, prompt_endattack, []);
 		cutsc("cosknives 1", 3, true, prompt_attack, [960,320-100,oAttackPatternCosKnives,10]);
 		cutsc("cosknives 2", 3, true, prompt_attack, [960,320-10,oAttackPatternCosKnives,10]);
-		cutsc("enki_final4", 3.5*SEC, true, dialogue_date, [enki_final4, 6, 0, 0]);
-		cutsc("enki_final5", 1.5*SEC, true, dialogue_date, [enki_final5, 6, 0, 2]);
+		cutsc("enki_final4", 3.6*SEC, true, dialogue_date, [enki_final4, 6, 0, 0]);
+		cutsc("enki_final5", 2*SEC, true, dialogue_date, [enki_final5, 6, 0, 2]);
 		cutsc("end cosknive finale", 3, true, prompt_endattack, []);
 		cutsc("lastbutcher1", 3, true, prompt_attack, [960+300,320,oAttackPatternButcher,10]);
-		cutsc("enki_final6", 2*SEC, true, dialogue_protagonist, [enki_final6, 6, 2, 4, 2, 3]);
+		cutsc("enki_final6", 2.3*SEC, true, dialogue_protagonist, [enki_final6, 6, 2, 4, 2, 3]);
 		cutsc("lastminiknives1", 3, true, prompt_attack, [960+400,320,oAttackPatternMiniKnives,10]);
-		cutsc("enki_final7", 2*SEC, true, dialogue_date, [enki_final7, 3, 0, 2]);
-		cutsc("lastbutcher2", 3, true, prompt_attack, [960-300,320,oAttackPatternButcher,10]);
+		cutsc("enki_final7", 2.4*SEC, true, dialogue_date, [enki_final7, 3, 0, 2]);
+		//cutsc("lastbutcher2", 3, true, prompt_attack, [960-300,320,oAttackPatternButcher,10]);
 		cutsc("lastminiknives2", 3, true, prompt_attack, [960-400,320,oAttackPatternMiniKnives,10]);
-		cutsc("enki_final8", 2*SEC, true, dialogue_date, [enki_final8, 3, 0, 2]);
+		cutsc("enki_final8", 2.8*SEC, true, dialogue_date, [enki_final8, 3, 0, 2]);
 		cutsc("enki_final9", 7*SEC, true, dialogue_date, [enki_final9, 3, 5, 3]);
 		cutsc("end knives finale", 3, true, prompt_endattack, []);
 		

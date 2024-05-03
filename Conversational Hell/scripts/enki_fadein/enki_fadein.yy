@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"enki_fadein",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"enki_fadein",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":5.12,
+  "duration":8.986122,
   "name":"jag_intro2",
   "parent":{
     "name":"jag_intro",

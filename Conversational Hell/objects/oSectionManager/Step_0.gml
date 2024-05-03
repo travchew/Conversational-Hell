@@ -50,10 +50,6 @@ switch (global.section) {
 	case "enki_final":
 		check_cutsc_enki_final();
 	break;
-	
-	
-	
-	
 
 	default:
 		//msg("default");

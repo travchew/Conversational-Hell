@@ -55,7 +55,33 @@ if (choice_set = decisions3) {
 }
 
 if (choice_set = decisions4) {
-	room_goto(ending);
+	global.datescore -= ((global.anxiety)/4);
+	
+	if global.decision_chosen = 0 { // friendzone endings
+		if (global.datescore > 7.5) {
+			msg("ENDING: go to ed_rejectgood1");
+			myFade = instance_create_layer(x,y,"UI_Layer", oFadeToBlack);
+			myFade.room_togoto = ed_rejectgood1; // REPLACE WITH NEW ROOM
+		}
+		else {
+			msg("ENDING: go to ed_rejectbad1");
+			myFade = instance_create_layer(x,y,"UI_Layer", oFadeToBlack);
+			myFade.room_togoto = ed_rejectbad1; // REPLACE WITH NEW ROOM
+		}
+	}
+	
+	else if global.decision_chosen = 1 { // want to see you again
+		if (global.datescore > 7.5) {
+			msg("ENDING: go to ed_lovegood1");
+			myFade = instance_create_layer(x,y,"UI_Layer", oFadeToBlack);
+			myFade.room_togoto = ed_lovegood1; // REPLACE WITH NEW ROOM
+		}
+		else {
+			msg("ENDING: go to ed_lovebad1");
+			myFade = instance_create_layer(x,y,"UI_Layer", oFadeToBlack);
+			myFade.room_togoto = ed_lovebad1; // REPLACE WITH NEW ROOM
+		}
+	}
 }
 
 

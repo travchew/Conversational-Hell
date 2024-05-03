@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"snd_creepyviolin",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":97.584,
+  "name":"snd_creepyviolin",
+  "parent":{
+    "name":"Sounds",
+    "path":"folders/Sounds.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"snd_creepyviolin.mp3",
+  "type":0,
+  "volume":1.0,
+}

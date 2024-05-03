@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":1.28,
+  "duration":1.068118,
   "name":"date_start6",
   "parent":{
     "name":"date_start",
@@ -19,7 +19,7 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"date_start6.mp3",
+  "soundFile":"date_start6.wav",
   "type":0,
-  "volume":0.37,
+  "volume":1.0,
 }

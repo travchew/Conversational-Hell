@@ -120,7 +120,7 @@ function check_dmg() {
 		//sprite_index = sEnemyFlash;
 		alarm[1] = 12;
 		hp -= 1;
-		global.anxiety += 0.3;
+		global.anxiety += 0.5;
 		oProtagonist.shakeby(6);
 		global.limit += 9;
 		audio_play_sound(snd_hurt, 10, false, 10, 0.16);
